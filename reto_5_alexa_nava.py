@@ -3,12 +3,11 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 
-employees_link = '/Employees (1).csv'
-
 @st.cache
 def load_data (nrows):
-  employees_data = pd.read_csv(employees_link,nrows=nrows)
-  return employees_data
+  doc=codecs.open('Employees (1).csv','rU','latin1')
+  data=pd.read_csv(doc,nrows=nrows)
+  return data
   
 data=load_data(500)
 
