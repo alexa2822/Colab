@@ -5,8 +5,9 @@ import seaborn as sns
 
 @st.cache
 def load_data (nrows):
-  doc=codecs.open('Employees (1).csv','rU','latin1')
+  doc=codecs.open('Employees.csv','rU','latin1')
   data=pd.read_csv(doc,nrows=nrows)
+  lowercase=lambda x: str(x).lower()
   return data
   
 data=load_data(500)
