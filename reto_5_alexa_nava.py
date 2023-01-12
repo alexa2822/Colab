@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 
-employees_link = '/content/Employees (1).csv'
+employees_link = '/Employees (1).csv'
 
 @st.cache
 def load_data (nrows):
