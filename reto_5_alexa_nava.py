@@ -13,8 +13,8 @@ def load_data (nrows):
   
 data=load_data(500)
 
-st.title("RETO MODULO 5 - APLICACION WEB DE CIENCIA DE DATOS")
-st.header("Alexa Gabriela Nava Rodríguez")
+#st.title("RETO MODULO 5 - APLICACION WEB DE CIENCIA DE DATOS")
+#st.header("Alexa Gabriela Nava Rodríguez")
 
 if st.sidebar.checkbox ('Mostrar datos'):
   st.write (data)
